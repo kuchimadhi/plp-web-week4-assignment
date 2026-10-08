@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendWise Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand-row">
+          <div class="brand-mark">S</div>
+          <div>
+            <p class="eyebrow">Finance</p>
+            <h1>SpendWise</h1>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a class="nav-item active" href="#">
+            <span class="nav-icon">◫</span>
+            <span>Overview</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">◌</span>
+            <span>Transactions</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">▣</span>
+            <span>Budgets</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">◎</span>
+            <span>Insights</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">◍</span>
+            <span>Goals</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="nav-icon">◔</span>
+            <span>Reports</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-card">
+          <p class="eyebrow">This month</p>
+          <h2>$4,280</h2>
+          <p class="muted">You have saved 12.4% more than last month.</p>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Good morning</p>
+            <h2>Dashboard Overview</h2>
+          </div>
+
+          <div class="toolbar">
+            <button class="ghost-button" type="button">Export</button>
+            <button class="primary-button" type="button">+ Add expense</button>
+            <div class="avatar-wrap" aria-label="User profile">
+              <span>JD</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="summary-grid" aria-label="Financial summary">
+          <article class="summary-card highlight">
+            <div class="summary-header">
+              <div>
+                <p class="eyebrow">Total balance</p>
+                <h3>$24,380.50</h3>
+              </div>
+              <span class="trend positive">+8.2%</span>
+            </div>
+            <div class="mini-chart" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </article>
+
+          <article class="summary-card">
+            <p class="eyebrow">Monthly spend</p>
+            <h3>$3,420</h3>
+            <p class="muted">$540 less than planned</p>
+          </article>
+
+          <article class="summary-card">
+            <p class="eyebrow">Savings</p>
+            <h3>$7,840</h3>
+            <p class="muted">Target reached 76%</p>
+          </article>
+        </section>
+
+        <section class="dashboard-grid" aria-label="Budget categories">
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-label">
+                <span class="dot food"></span>
+                <span>Food</span>
+              </div>
+              <span class="status-pill green">+4%</span>
+            </div>
+            <h3>$680</h3>
+            <p class="muted">Spent this month</p>
+            <div class="progress">
+              <span style="width: 72%"></span>
+            </div>
+            <div class="card-meta">
+              <span>$950 budget</span>
+              <span>72%</span>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-label">
+                <span class="dot transport"></span>
+                <span>Transport</span>
+              </div>
+              <span class="status-pill amber">-3%</span>
+            </div>
+            <h3>$420</h3>
+            <p class="muted">Spent this month</p>
+            <div class="progress">
+              <span style="width: 58%"></span>
+            </div>
+            <div class="card-meta">
+              <span>$720 budget</span>
+              <span>58%</span>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-label">
+                <span class="dot rent"></span>
+                <span>Rent</span>
+              </div>
+              <span class="status-pill blue">On track</span>
+            </div>
+            <h3>$1,500</h3>
+            <p class="muted">Spent this month</p>
+            <div class="progress">
+              <span style="width: 90%"></span>
+            </div>
+            <div class="card-meta">
+              <span>$1,650 budget</span>
+              <span>90%</span>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-label">
+                <span class="dot entertainment"></span>
+                <span>Entertainment</span>
+              </div>
+              <span class="status-pill red">+12%</span>
+            </div>
+            <h3>$360</h3>
+            <p class="muted">Spent this month</p>
+            <div class="progress">
+              <span style="width: 63%"></span>
+            </div>
+            <div class="card-meta">
+              <span>$570 budget</span>
+              <span>63%</span>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-label">
+                <span class="dot savings"></span>
+                <span>Savings</span>
+              </div>
+              <span class="status-pill green">+9%</span>
+            </div>
+            <h3>$950</h3>
+            <p class="muted">Deposited this month</p>
+            <div class="progress">
+              <span style="width: 81%"></span>
+            </div>
+            <div class="card-meta">
+              <span>$1,175 goal</span>
+              <span>81%</span>
+            </div>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="card-top">
+              <div class="category-label">
+                <span class="dot utilities"></span>
+                <span>Utilities</span>
+              </div>
+              <span class="status-pill neutral">Stable</span>
+            </div>
+            <h3>$280</h3>
+            <p class="muted">Spent this month</p>
+            <div class="progress">
+              <span style="width: 48%"></span>
+            </div>
+            <div class="card-meta">
+              <span>$580 budget</span>
+              <span>48%</span>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
